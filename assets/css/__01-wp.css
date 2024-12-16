@@ -16,4 +16,43 @@ body {
 	font-size: 16px;
 	line-height: 1.5;
 	overflow-x: hidden;
-} 
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 1440px;
+	margin: auto;
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, figure, dl, dd, ol, ul, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+	.m-none {
+		display: none;
+	}
+}

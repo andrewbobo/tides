@@ -1,0 +1,799 @@
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.video-background .content {
+    position: absolute;
+    bottom: 215px;
+    left: 0px;
+    color: #fff;
+    text-align: left;
+    z-index: 1;
+}
+
+.video-background h1 {
+  color: var(--Pure-White, #FFF);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 66.635px; /* 277.647% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.video-background p {
+  color: var(--Ocean-Blue, #B7D6D9);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Baskerville;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 66.635px; /* 83.294% */
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+
+.video-background  img{
+  width: 100%;
+  max-width: 162px;
+  position: absolute;
+  bottom: 85px;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.booking {
+  padding: 24px 80px;
+}
+
+.booking_logo {
+  text-align: center;
+}
+
+.booking_logo img {
+  margin-bottom: 26px;
+}
+
+.booking_widget {
+  text-align: center;
+}
+
+.booking_benef {
+  margin-top: 180px;
+}
+
+.booking_benef h2 {
+  color: var(--Warm-Taupe, #847577);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 90px;
+}
+
+.booking_benef_blocks_block {
+  position: relative;
+  width: 100%;
+  max-width: 345px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 44px;
+  height: 150px;
+}
+
+.booking_benef_blocks_block img {
+  opacity: 0;
+  transition: 0.7s;
+  margin-top: -70px;
+}
+
+.booking_benef_blocks_block h3 {
+  top: 0;
+  position: absolute;
+  color: #000;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 266.667% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: 0.7s;
+
+}
+
+.booking_benef_blocks_block:hover img {
+  opacity: 1;
+  transition: 0.7s;
+}
+
+.booking_benef_blocks_block:hover h3 {
+  top: 50px;
+  transition: 0.7s;
+}
+
+.booking_benef_blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.favorite {
+  padding: 250px 0 45px;
+  background-repeat: no-repeat !important;
+}
+
+.favorite .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favorite p {
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  margin-bottom: 48px;
+}
+
+.favorite svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.info {
+  padding: 200px 0 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+
+.birth {
+  position: relative;
+  max-width: max-content;
+}
+
+.birth:before {
+  content: "";
+  background: url(http://tilda/wp-content/uploads/2024/12/Group-4.svg);
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 70%;
+  left: 100%;
+}
+
+
+.info h3 {
+  color: var(--Warm-Taupe, #847577);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.info p {
+  color: var(--Dark-Taupe, #454346);
+  text-align: justify;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  max-width: 938px;
+}
+
+.villa{
+  overflow: hidden;
+  transition: all .5s;
+  gap: 10px;
+  flex-direction: column;
+  display: flex;
+}
+
+.villa_block {
+  position: relative;
+}
+
+.villa_block_info_top,
+.villa_block_info_top_bottom {
+  position: relative;
+  z-index: 0;
+  transition: all .5s;
+}
+
+.villa_block:hover .villa_block_info_top {
+  top: 20px;
+  z-index: 1;
+}
+
+.villa_block:hover .villa_block_info_top_bottom {
+  bottom: 20px;
+  z-index: 1;
+}
+
+
+.btn_white {
+  border-radius: 2px;
+  border: 1px solid var(--Dark-Taupe, #454346);
+  color: var(--Main-bulma, #000);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 12px 16px;
+  transition: all .3s;
+  text-decoration: none;
+}
+
+.btn_white:hover {
+  border-radius: 2px;
+  border: 1px solid var(--Dark-Taupe, #454346);
+  background: var(--Soft-Sand, #F5F1EA);
+  transition: all .3s;
+}
+
+.villa_block_info_top_numbers {
+  position: relative;
+  background: var(--Ocean-Blue, #b7d6d9);
+  max-width: 104px;
+  max-height: 114px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.villa_block_info_top_numbers span {
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.villa_block_info_top_numbers span:first-child {
+  position: absolute;
+  top: 12px;
+  left: 18px;
+}
+
+.villa_block_info_top_numbers span:last-child {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+
+.villa_block_info_top {
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  width: 100%;
+  top: -200px;
+  z-index: -1;
+  transition: all .5s;
+}
+
+.villa_block_info_top_title {
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 32px 34px;
+  background: var(--Ocean-Blue, #B7D6D9);
+}
+
+.villa_block_info_top_bottom {
+  position: absolute;
+  bottom: -200px;
+  right: 0;
+  background: var(--Ocean-Blue, #b7d6d9);
+  width: 100%;
+  display: flex;
+  max-width: 820px;
+  padding: 40px 50px 28px 88px;
+  gap: 46px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.villa_block_info_top_bottom_title p{
+  color: var(--Dark-Taupe, #454346);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 266.667% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.villa_block_info_top_bottom_title span{
+  color: var(--Dark-Taupe, #454346);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 300% */
+  letter-spacing: 3px;
+}
+
+.experience {
+  padding: 100px 0 80px;
+}
+
+.experience_info span {
+  color: var(--Warm-Taupe, #847577);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 160% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 60px;
+
+}
+
+.experience_info h2 {
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Baskerville;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 66.635px; /* 66.635% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.experience_blocks_block, .experience_blocks_block_second {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.experience_blocks_block h3, .experience_blocks_block_second h3 {
+  color: var(--Warm-Taupe, #847577);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+
+.experience_blocks_block p, .experience_blocks_block_second p {
+  color: var(--Dark-Taupe, #454346);
+  text-align: justify;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  margin-bottom: 40px;
+}
+
+.experience_blocks_block_info .btn_white{
+  margin-bottom: 50px;
+  display: block;
+  max-width: fit-content;
+}
+
+.experience_blocks .experience_blocks_block .experience_blocks_block_img {
+  position: relative;
+  top: -400px;
+  transition: all 1s;
+}
+
+.experience_blocks.show .experience_blocks_block .experience_blocks_block_img{
+    top: 0;
+    transition: all 1s;
+}
+
+.experience_blocks .experience_blocks_block_second{
+  top: 400px;
+  transition: all 1s;
+  position: relative;
+  transition: all 1s;
+}
+
+.experience_blocks.show .experience_blocks_block_second{
+  top: 0px;
+  transition: all 1s;
+}
+
+.experience_blocks {
+  display: flex;
+  gap: 16px;
+}
+
+.experience_blocks_block_second .btn_white {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .experience_blocks_block_info {
+      padding: 0 15px;
+    }
+
+    .experience_blocks_block_info h3 {
+      color: var(--Warm-Taupe, #847577);
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px; /* 200% */
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+    .experience_blocks_block_info p {
+      color: var(--Dark-Taupe, #454346);
+      text-align: justify;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 171.429% */
+    }
+
+    .experience_blocks .experience_blocks_block .experience_blocks_block_img,
+    .experience_blocks .experience_blocks_block_second {
+        position: static;
+        top: 0;
+        transition: none;
+    }
+
+    .experience_blocks.show .experience_blocks_block .experience_blocks_block_img,
+    .experience_blocks.show .experience_blocks_block_second {
+        top: 0;
+        transition: none;
+    }
+
+    .experience_info h2 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .experience_blocks_block_second {
+      display: none;
+    }
+    .experience_info span {
+      color: var(--Warm-Taupe, #847577);
+      text-align: center;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px; /* 155.556% */
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .villa {
+      overflow: hidden;
+      transition: all .5s;
+      gap: 4px;
+      display: flex;
+      flex-direction: column;
+    }
+    .villa_block_info_top_numbers {
+      max-width: 84px;
+      max-height: 102px;
+    }
+    .villa_block_info_top {
+      display: flex;
+      gap: 16px;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 0;
+      transition: all .5s;
+    }
+
+    .villa_block_info_top_numbers span:first-child {
+      font-size: 32px;
+    }
+
+    .villa_block_info_top_numbers span:last-child {
+      font-size: 16px;
+    }
+
+    .villa_block_info_top_title {
+      color: var(--Dark-Taupe, #454346);
+      text-align: center;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 38.961px; /* 162.338% */
+      letter-spacing: 4.058px;
+      text-transform: uppercase;
+    }
+
+    .villa_block_info_top_bottom {
+      position: absolute;
+      bottom: 0px;
+      right: 0;
+      background: var(--Ocean-Blue, #b7d6d9);
+      width: 100%;
+      display: flex;
+      max-width: 820px;
+      padding: 24px 17px;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      color: var(--Dark-Taupe, #454346);
+    }
+
+    .villa_block_info_top_numbers span {
+      font-size: 14px;
+    }
+
+    .villa_block_info_top_title {
+      font-size: 14px;
+    }
+
+    .birth:before {
+      content: "";
+      background: url(http://tilda/wp-content/uploads/2024/12/Group-4.svg);
+      width: 35px;
+      height: 40px;
+      display: block;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      bottom: 50%;
+      left: 90%;
+    }
+    .info {
+      padding: 58px 15px 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .info h3 {
+      color: var(--Warm-Taupe, #847577);
+      text-align: center;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px; /* 266.667% */
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .info p {
+      color: var(--Dark-Taupe, #454346);
+      text-align: justify;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 171.429% */
+    }
+    .favorite {
+      padding: 0 15px 245px;
+    }
+
+    .favorite img {
+      max-width: 246px;
+      margin-bottom: 15px;
+    }
+
+    .favorite svg {
+      position: static;
+    }
+
+    .favorite p {
+      color: var(--Dark-Taupe, #454346);
+      text-align: center;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px; /* 228.571% */
+    }
+    .booking_benef h2 {
+      color: var(--Warm-Taupe, #847577);
+      text-align: center;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px; /* 266.667% */
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+    .booking_benef_blocks {
+      gap: 24px 0;
+    }
+    .booking_benef_blocks_block {
+      height: 100%;
+      position: relative;
+      width: 100%;
+      max-width: 175px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+
+    .booking_benef {
+      margin-top: 34px;
+    }
+    .booking_benef_blocks_block h3 {
+      position: static;
+      color: #000;
+      text-align: center;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28.495px; /* 284.947% */
+      letter-spacing: 1.781px;
+      text-transform: uppercase;
+    }
+
+    .booking_benef_blocks_block img {
+      max-width: 100%;
+      height: 70px;
+      object-fit: cover;
+      opacity: 1;
+      transition: 0.7s;
+      margin: 0;
+    }
+
+    .booking_logo, .booking_widget {
+      display: none;
+    }
+    .booking {
+      padding: 12px;
+    }
+    .video-background {
+        height: 100vh;
+    }
+
+    .video-background video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    .video-background .content {
+        bottom: 100px;
+        left: 10px;
+    }
+
+    .video-background h1 {
+      color: var(--Pure-White, #FFF);
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 18px; /* 112.5% */
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .video-background p {
+      color: var(--Ocean-Blue, #B7D6D9);
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: Baskerville;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px; /* 100% */
+      letter-spacing: 3px;
+      text-align: left;
+    }
+
+    .video-background img {
+        max-width: 100px;
+        bottom: 10px;
+        margin-left: -50px;
+    }
+
+    .video-background .btn-cls {
+      margin: auto;
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      max-width: 200px;
+      display: none;
+    }
+}
