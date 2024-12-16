@@ -99,3 +99,10 @@ function copyrights_theme_customizer( $wp_customize ) {
   ) );
 }
 add_action( 'customize_register', 'copyrights_theme_customizer' );
+
+
+function enable_svg_upload($mime_types) {
+    $mime_types['svg'] = 'image/svg+xml'; // Добавляем поддержку SVG
+    return $mime_types;
+}
+add_filter('upload_mimes', 'enable_svg_upload');

@@ -14,11 +14,16 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<?php wp_head(); ?>
 </head>
+
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
@@ -28,11 +33,11 @@
 			<div class="site-header">
 				<div class="container header__wrap">
 					<?php if (theme_logo()) : ?>
-						<?= theme_logo(); // Appearance -> Customize -> Site Identity -> Logo field ?>
+						<?= theme_logo();  ?>
 					<?php else : ?>
 						<a href="/" class="site-branding" rel="home" aria-current="page" tabindex="0">
 							<?php bloginfo('name'); ?>
-						</a><!-- .site-branding -->
+						</a>
 					<?php endif; ?>
 
 					<nav class="main-navigation">
@@ -44,14 +49,16 @@
 							)
 						);
 						?>
-					</nav><!-- #site-navigation -->
+					</nav>
 
 					<div id="burger-menu" class="burger-menu">
 						<div class="bar1"></div>
 						<div class="bar2"></div>
 						<div class="bar3"></div>
 					</div>
+
+					<a href="#" class="btn-cls">check availability</a>
 				</div>
 
 			</div>
-		</header><!-- #masthead -->
+		</header>
