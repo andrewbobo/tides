@@ -1,0 +1,280 @@
+.villas {
+    padding: 0 0 94px 0;
+    text-align: center;
+}
+
+.villas .section-title {
+  color: var(--Warm-Taupe, #847577);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-bottom: 36px;
+}
+
+.villas-grid {
+  display: flex;
+  gap: 16px;
+}
+
+.villa-item {
+  border: 1px solid var(--Ocean-Blue, #B7D6D9);
+  background: var(--Pure-White, #FFF);
+  padding: 22px;
+}
+
+.villas .villa-title{
+  color: var(--Dark-Taupe, #454346);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 100% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.villas .villa-size{
+  color: var(--Dark-Taupe, #454346);
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 100% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.villa-amenities {
+  display: flex;
+  justify-content: space-between;
+  color: var(--Dark-Taupe, #454346);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 3px;
+  padding-top: 100px;
+  padding-bottom: 35px;
+}
+
+.villas a {
+  border-radius: 2px;
+  background: var(--Ocean-Blue, #B7D6D9);
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 12px;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+}
+
+.villa-amenities li {
+  position: relative;
+}
+
+.villa-amenities li.beach:before {
+  position: absolute;
+  content: "";
+  background: url(/wp-content/uploads/2024/12/Isolation_Mode.png);
+  width: 80px;
+  height: 80px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.villa-amenities li.private:before {
+  position: absolute;
+  content: "";
+  background: url(/wp-content/uploads/2024/12/Isolation_Mode-1.png);
+  width: 80px;
+  height: 80px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.villa-amenities li.bathroom:before {
+  position: absolute;
+  content: "";
+  background: url(/wp-content/uploads/2024/12/2.png);
+  width: 80px;
+  height: 80px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -40px;
+}
+
+
+.attractions_maintitle {
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Baskerville;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120px; /* 120% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 90px;
+}
+
+.attractions_block h2 {
+  color: var(--Warm-Taupe, #847577);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.attractions_block img {
+  margin: 30px 0 60px;
+}
+
+.attractions_block p {
+  color: var(--Dark-Taupe, #454346);
+  text-align: justify;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  margin-bottom: 60px;
+}
+
+.attractions_block_list_title {
+  color: var(--Dark-Taupe, #454346);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 166.667% */
+  text-transform: uppercase;
+}
+
+.attractions_block_list ul li {
+  color: var(--Dark-Taupe, #454346);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 166.667% */
+}
+
+.attractions_block_list ul {
+  list-style-type: disc;
+  padding-left: 30px;
+  padding-bottom: 60px;
+}
+
+.attractions_block h3 {
+  max-width: 940px;
+  margin: auto;
+  color: var(--Dark-Taupe, #454346);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 166.667% */
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .villas-grid {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    margin: 12px;
+  }
+
+  .villa-amenities {
+    display: flex;
+    justify-content: space-between;
+    color: var(--Dark-Taupe, #454346);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 3px;
+    padding-top: 100px;
+    padding-bottom: 35px;
+  }
+
+  .villa-item {
+    border: 1px solid var(--Ocean-Blue, #b7d6d9);
+    background: var(--Pure-White, #fff);
+    padding: 12px;
+  }
+
+
+  .attractions_maintitle {
+    font-size: 40px;
+    margin-bottom: 40px;
+    line-height: 100%;
+  }
+
+  .attractions_block h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .attractions_block img {
+    margin: 10px 0 30px;
+  }
+
+  .attractions_block p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .attractions_block_list_title {
+    font-size: 20px;
+  }
+
+  .attractions_block_list ul li {
+    font-size: 20px;
+  }
+
+  .attractions_block_list ul {
+    padding-bottom: 30px;
+  }
+
+  .attractions_block h3 {
+    font-size: 20px;
+  }
+}

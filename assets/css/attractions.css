@@ -1,0 +1,10 @@
+.attractions {
+  padding: 20px 20px 150px;
+}
+
+.attractions h2,
+.attractions p,
+.attractions .attractions_block_list {
+  max-width: 940px;
+  margin: auto;
+}
