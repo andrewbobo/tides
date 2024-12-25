@@ -46,8 +46,33 @@ get_header(); ?>
                   <?php endif; ?>
               </div>
 
-              <div class="booking_widget">
-                  <img src="http://tilda/wp-content/uploads/2024/12/Frame-28.png" alt="booking" class="booking_logo">
+              <div class="booking_benef_logo_blocks">
+
+                  <?php
+                  $description = get_sub_field('description');
+                  if ($description): ?>
+                      <p class="booking_description"><?php echo esc_html($description); ?></p>
+                  <?php endif; ?>
+                  <div class="booking_benef_logo_blocks_items">
+
+                  <?php if (have_rows('benefits_blocks_logo')): ?>
+                      <?php while (have_rows('benefits_blocks_logo')): the_row(); ?>
+                          <div class="booking_benef_logo_block">
+                              <?php
+                              $block_icon = get_sub_field('icon');
+                              $block_link = get_sub_field('link');
+                              if ($block_link): ?>
+                                  <a href="<?php echo esc_url($block_link); ?>" target="_blank">
+                                      <?php if ($block_icon): ?>
+                                          <img src="<?php echo esc_url($block_icon); ?>" alt="Logo Icon">
+                                      <?php endif; ?>
+                                  </a>
+                              <?php endif; ?>
+                          </div>
+
+                      <?php endwhile; ?>
+                  <?php endif; ?>
+                </div>
               </div>
 
               <div class="booking_benef">
@@ -56,6 +81,7 @@ get_header(); ?>
                   if ($title_section): ?>
                       <h2><?php echo esc_html($title_section); ?></h2>
                   <?php endif; ?>
+
 
                   <div class="booking_benef_blocks">
                       <?php if (have_rows('benefits_blocks')): ?>
@@ -80,6 +106,7 @@ get_header(); ?>
           <?php endwhile; ?>
       <?php endif; ?>
   </section>
+
 
 
   <?php if (have_rows('section_favorite')): ?>
@@ -189,7 +216,7 @@ get_header(); ?>
                                   <div class="experience_blocks_block">
                                       <div class="experience_blocks_block_info">
                                           <?php echo wp_kses_post(get_sub_field('title')); ?>
-                                          <p><?php echo esc_html(get_sub_field('description')); ?></p>
+                                          <p><?php echo wp_kses_post(get_sub_field('description')); ?></p>
                                           <?php if ($button = get_sub_field('button')): ?>
                                               <a href="<?php echo esc_url($button['url']); ?>" class="btn_white" target="<?php echo esc_attr($button['target']); ?>">
                                                   <?php echo esc_html($button['title']); ?>
@@ -211,7 +238,7 @@ get_header(); ?>
                                       </div>
                                       <div class="experience_blocks_block_info">
                                           <h3><?php echo wp_kses_post(get_sub_field('title')); ?></h3>
-                                          <p><?php echo esc_html(get_sub_field('description')); ?></p>
+                                          <p><?php echo wp_kses_post(get_sub_field('description')); ?></p>
                                           <?php if ($button = get_sub_field('button')): ?>
                                               <a href="<?php echo esc_url($button['url']); ?>" class="btn_white" target="<?php echo esc_attr($button['target']); ?>">
                                                   <?php echo esc_html($button['title']); ?>
@@ -227,6 +254,229 @@ get_header(); ?>
           </section>
       <?php endwhile; ?>
   <?php endif; ?>
+
+  <?php if (have_rows('section_parallax')): ?>
+    <section class="paralax">
+      <div class="container">
+        <?php while (have_rows('section_parallax')): the_row(); ?>
+          <?php $image_url = get_sub_field('image'); ?>
+          <?php if ($image_url): ?>
+            <img src="<?php echo esc_url($image_url); ?>" alt="parallax image">
+          <?php endif; ?>
+        <?php endwhile; ?>
+      </div>
+    </section>
+  <?php endif; ?>
+
+
+  <?php if (have_rows('section_experience_second')): ?>
+    <?php while (have_rows('section_experience_second')): the_row(); ?>
+        <section class="journey">
+            <div class="container">
+                <div class="journey_info">
+                    <span><?php echo esc_html(get_sub_field('subtitle')); ?></span>
+                    <h2><?php echo esc_html(get_sub_field('title')); ?></h2>
+                </div>
+                <div class="journey_blocks">
+                    <?php if (have_rows('block_info')): ?>
+                        <?php $block_count = 0; ?>
+                        <?php while (have_rows('block_info')): the_row(); ?>
+                            <?php $block_count++; ?>
+                            <?php if ($block_count % 2 === 1): ?>
+                                <div class="journey_blocks_block">
+                                    <div class="journey_blocks_block_info">
+                                        <h3><?php echo wp_kses_post(get_sub_field('title')); ?></h3>
+                                        <p><?php echo wp_kses_post(get_sub_field('description')); ?></p>
+                                        <?php if ($button = get_sub_field('button')): ?>
+                                            <a href="<?php echo esc_url($button['url']); ?>" class="btn_white" target="<?php echo esc_attr($button['target']); ?>">
+                                                <?php echo esc_html($button['title']); ?>
+                                            </a>
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="journey_blocks_block_img">
+                                        <?php if ($image = get_sub_field('image')): ?>
+                                            <img src="<?php echo esc_url($image); ?>" alt="journey image">
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                            <?php else: ?>
+                                <div class="journey_blocks_block_second">
+                                    <div class="journey_blocks_block_img">
+                                        <?php if ($image = get_sub_field('image')): ?>
+                                            <img src="<?php echo esc_url($image); ?>" alt="journey image">
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="journey_blocks_block_info">
+                                        <h3><?php echo wp_kses_post(get_sub_field('title')); ?></h3>
+                                        <p><?php echo wp_kses_post(get_sub_field('description')); ?></p>
+                                        <?php if ($button = get_sub_field('button')): ?>
+                                            <a href="<?php echo esc_url($button['url']); ?>" class="btn_white" target="<?php echo esc_attr($button['target']); ?>">
+                                                <?php echo esc_html($button['title']); ?>
+                                            </a>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </section>
+    <?php endwhile; ?>
+<?php endif; ?>
+
+
+
+<?php if (have_rows('section_rating')): ?>
+    <?php while (have_rows('section_rating')): the_row(); ?>
+        <section class="rating">
+            <div class="container">
+                <?php if ($title = get_sub_field('title')): ?>
+                    <h3 class="birth"><?php echo esc_html($title); ?></h3>
+                <?php endif; ?>
+                <div class="rating_blocks">
+                    <?php if (have_rows('rating_blocks')): ?>
+                        <?php while (have_rows('rating_blocks')): the_row(); ?>
+                            <?php
+                                $link = get_sub_field('link');
+                                $logo = get_sub_field('logo');
+                                $info = get_sub_field('info');
+                                $icon = get_sub_field('icon');
+                            ?>
+                            <div class="rating_blocks_block">
+                                <?php if (!empty($link)): ?>
+                                    <a href="<?php echo esc_url($link); ?>" target="_blank">
+                                        <?php if (!empty($logo)): ?>
+                                            <img src="<?php echo esc_url($logo); ?>" alt="<?php echo esc_attr($info ?? 'Rating logo'); ?>">
+                                        <?php endif; ?>
+                                        <?php if (!empty($info)): ?>
+                                            <h3><?php echo esc_html($info); ?></h3>
+                                        <?php endif; ?>
+                                        <?php if (!empty($icon)): ?>
+                                            <img src="<?php echo esc_url($icon); ?>" alt="icon">
+                                        <?php endif; ?>
+                                    </a>
+                                <?php endif; ?>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php else: ?>
+                        <p>No rating blocks found.</p>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </section>
+    <?php endwhile; ?>
+<?php else: ?>
+    <p>No section rating found.</p>
+<?php endif; ?>
+
+
+<section class="reviews">
+    <div class="reviews_container">
+      <h3>Reviews</h3>
+
+        <div class="reviews_slider">
+
+            <?php
+            $review_posts = get_field('section_reviews');
+
+            if ($review_posts) {
+                if (is_array($review_posts)) {
+                    foreach ($review_posts as $review_post) {
+                        $post_id = $review_post->ID;
+                        $thumbnail_url = get_the_post_thumbnail_url($post_id, 'full');
+                        $reviews_group = get_field('reviews', $post_id);
+                        $rating = $reviews_group['rating'] ?? '';
+                        $description = $reviews_group['description'] ?? '';
+                        ?>
+                        <div class="review_item">
+                            <?php if ($thumbnail_url): ?>
+                                <div class="review-thumbnail">
+                                    <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php echo esc_attr($review_post->post_title); ?>">
+                                </div>
+                            <?php endif; ?>
+
+                            <h4>
+                                <?php echo esc_html($review_post->post_title); ?>
+                                <?php if ($rating): ?>
+                                    <span><?php echo esc_html($rating); ?></span>
+                                <?php endif; ?>
+                            </h4>
+
+                            <?php if ($description): ?>
+                                <p><?php echo wp_kses_post($description); ?></p>
+                            <?php endif; ?>
+
+                            <a class="btn_white" href="<?php echo esc_url(get_permalink($post_id)); ?>" target="_blank">Show More</a>
+                        </div>
+                        <?php
+                    }
+                } else {
+                    $post_id = $review_posts->ID;
+                    $thumbnail_url = get_the_post_thumbnail_url($post_id, 'full');
+                    $reviews_group = get_field('reviews', $post_id);
+                    $rating = $reviews_group['rating'] ?? '';
+                    $description = $reviews_group['description'] ?? '';
+                    ?>
+                    <div class="review_item">
+                        <?php if ($thumbnail_url): ?>
+                            <div class="review-thumbnail">
+                                <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php echo esc_attr($review_posts->post_title); ?>">
+                            </div>
+                        <?php endif; ?>
+
+                        <h4>
+                            <?php echo esc_html($review_posts->post_title); ?>
+                            <?php if ($rating): ?>
+                                <span><?php echo esc_html($rating); ?></span>
+                            <?php endif; ?>
+                        </h4>
+
+                        <?php if ($description): ?>
+                            <p><?php echo wp_kses_post($description); ?></p>
+                        <?php endif; ?>
+
+                        <a class="btn_white" href="<?php echo esc_url(get_permalink($post_id)); ?>" target="_blank">Show More</a>
+                    </div>
+                    <?php
+                }
+            } else {
+                echo '<p>No reviews selected.</p>';
+            }
+            ?>
+        </div>
+    </div>
+</section>
+
+
+<section class="location">
+  <div class="container">
+    <h3>location</h3>
+    <div class="location_info">
+      <div class="location_info_adress">
+        <img src="http://tilda/wp-content/uploads/2024/12/logo-color.png" alt="location_info_adress">
+        <p>
+          Oceans 13, Tambon Bo Put, Amphoe Ko Samui, Surat Thani 84320, Thailand
+        </p>
+
+        <ul>
+          <li>
+            Just 3 minutes from Fisherman’s Village
+          </li>
+          <li>
+            Just 10 minutes drive from Samui Airport
+          </li>
+        </ul>
+
+        <a class="btn_white" href="#">learn more</a>
+
+      </div>
+      <div class="location_info_map">
+        <img src="http://tilda/wp-content/uploads/2024/12/comp_x5F_Thailand.png" alt="location_info_map">
+      </div>
+    </div>
+  </div>
+</section>
 
 
 

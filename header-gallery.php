@@ -1,15 +1,3 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package SecretTidesLuxury
- */
-
-?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -28,21 +16,16 @@
 	<?php wp_head(); ?>
 </head>
 
-
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
 
-		<header id="masthead">
+		<header id="masthead" class="header-gallery">
 			<div class="site-header">
 				<div class="container header__wrap">
-					<?php if (theme_logo()) : ?>
-						<?= theme_logo();  ?>
-					<?php else : ?>
-						<a href="/" class="site-branding" rel="home" aria-current="page" tabindex="0">
-							<?php bloginfo('name'); ?>
-						</a>
-					<?php endif; ?>
+					<a href="/" class="site-logo-link" rel="home">
+						<img src="http://tilda/wp-content/uploads/2024/12/logo-1.png" alt="Logo">
+					</a>
 
 					<nav class="main-navigation">
 						<?php
@@ -63,6 +46,5 @@
 
 					<a href="#" class="btn-cls">check availability</a>
 				</div>
-
 			</div>
 		</header>

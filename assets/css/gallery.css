@@ -1,0 +1,473 @@
+.gallery {
+  padding: 0 20px 80px;
+}
+
+.gallery h1{
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Baskerville;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120px; /* 120% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.gallery p {
+  color: var(--Warm-Taupe, #847577);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px; /* 200% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.gallery_villa_blocks {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.gallery_villa_blocks_item {
+  width: 100%;
+  max-width: 343px;
+}
+
+.gallery_villa_blocks_item a {
+
+  text-decoration: none;
+}
+
+.gallery_villa_blocks_item h2 {
+  color: var(--Warm-Taupe, #847577);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 100% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 27px;
+  text-decoration: none;
+}
+
+.gallery_villa_blocks_item h2:hover {
+  color: #B7D6D9;
+  transition: all .3s;
+}
+
+
+.gallery_video {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+
+.gallery_video_block {
+  width: 100%;
+  max-width: 463px;
+  height: 273px;
+}
+
+.gallery_video_block video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+}
+
+.gallery_video_block h2{
+  color: var(--Warm-Taupe, #847577);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 100% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.villa-page {
+    padding: 40px 0;
+}
+
+.villa-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.villa-description {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.villa-gallery {
+    margin-top: 40px;
+}
+
+.gallery-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 14px !important;
+}
+
+.full-width img {
+    width: 100%;
+    height: auto;
+}
+
+.two-images img,
+.three-images img {
+    width: calc(50% - 10px);
+    height: auto;
+}
+
+.three-images img {
+    width: calc(33.33% - 13.33px);
+    height: auto;
+}
+
+.gallery-row.three-images-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-height: 650px;
+    overflow: hidden;
+
+}
+
+.gallery-row.three-images-centered .side-image {
+    flex: 0 0 20%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-row.three-images-centered .wide-center {
+    flex: 0 0 60%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-row.three-images-centered .side-image img,
+.gallery-row.three-images-centered .wide-center img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 660px;
+}
+
+.villa-page h1, .location-title {
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Baskerville;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120px; /* 120% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.villa-description {
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 32px 0 60px;
+}
+
+.gallery-row.full-width img {
+  max-height: 550px;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.gallery-row.three-images {
+  margin: 60px auto 60px !important;
+  max-height: 380px;
+}
+
+.villa-gallery img{
+  object-fit: cover !important;
+}
+
+.gallery-row.two-images img{
+  max-height: 640px;
+}
+
+.gallery-section-title h2 {
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 60px 0;
+}
+
+.location_desc {
+  color: var(--Dark-Taupe, #454346);
+  text-align: justify;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  max-width: 940px;
+  margin: 60px auto 120px;
+}
+
+.about-us-intro h1 {
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Baskerville;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120px; /* 120% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.about-us-intro-subdesc {
+  color: var(--Dark-Taupe, #454346);
+  text-align: justify;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  max-width: 940px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.about-us-page-gallery {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+
+.about-us-intro-desc {
+  max-width: 940px;
+  margin: auto;
+  color: var(--Dark-Taupe, #454346);
+  text-align: justify;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  margin-bottom: 90px;
+}
+
+.about-us-intro-subtitles {
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 200% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  max-width: 940px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.container_short {
+  max-width: 940px;
+  margin: auto;
+}
+
+.about-us-intro-title{
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 133.333% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 60px 0 85px;
+}
+
+.about-us-intro-img {
+  margin: auto;
+  max-width: 940px;
+  margin-top: -600px;
+  z-index: -1;
+  position: relative;
+}
+
+.about-us-intro-bg {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
+}
+
+.about-us-intro-logo {
+  position: relative;
+  max-width: max-content;
+}
+
+.about-us-intro-logo:before {
+  content: "";
+  background: url(/wp-content/uploads/2024/12/Group-3.png);
+  width: 55px;
+  height: 55px;
+  display: block;
+  position: absolute;
+  right: -50px;
+}
+
+.about-us-intro {
+  padding-bottom: 110px;
+}
+
+.review h1{
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Baskerville;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120px; /* 120% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .review h1{
+    font-size: 32px;
+    line-height: 100%; /* 120% */
+  }
+  .about-us-intro-logo {
+    display: none;
+  }
+  .about-us-intro-subtitles {
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  .about-us-intro {
+    padding: 20px;
+  }
+
+  .about-us-page-gallery {
+    flex-direction: column;
+  }
+
+  .about-us-intro h1 {
+    font-size: 32px;
+    line-height: 100%;
+  }
+  .villa-page h1, .location-title {
+    font-size: 32px;
+    line-height: 100%;
+  }
+
+  .location_desc {
+    color: var(--Dark-Taupe, #454346);
+    text-align: justify;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    max-width: 940px;
+    margin: 20px 20px 60px;
+  }
+
+  .gallery-section-title h2 {
+    font-size: 20px;
+    margin: 14px 0 24px;
+  }
+  .gallery-row.three-images-centered .side-image {
+      flex: 0 0 20%;
+  }
+
+  .gallery-row.three-images-centered .wide-center {
+      flex: 0 0 60%;
+  }
+}
+
+@media (max-width: 480px) {
+    .gallery-row.three-images-centered {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .gallery-row.three-images-centered .side-image,
+    .gallery-row.three-images-centered .wide-center {
+        flex: 0 0 100%;
+        height: 200px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+  .gallery_video_block video {
+    object-fit: contain;
+  }
+
+  .gallery_video_block h2{
+    margin-top: 10px;
+  }
+
+  .rating {
+    padding: 120px 0 20px;
+  }
+
+  .gallery h1 {
+    font-size: 32px;
+    line-height: 100%;
+  }
+
+  .gallery p {
+    font-size: 20px;
+    line-height: 100%;
+  }
+}

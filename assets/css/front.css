@@ -456,6 +456,7 @@
   margin-bottom: 50px;
   display: block;
   max-width: fit-content;
+  margin-left: auto;
 }
 
 .experience_blocks .experience_blocks_block .experience_blocks_block_img {
@@ -490,7 +491,417 @@
   margin-left: auto;
 }
 
+.paralax img {
+    margin-top: 300px;
+    transition: all .8s;
+}
+
+.paralax.active img{
+  margin-top: 0px;
+  transition: all .8s;
+}
+
+.journey {
+  padding: 100px 0 80px;
+}
+
+.journey_info span {
+  color: var(--Warm-Taupe, #847577);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.journey_info h2 {
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Baskerville;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 66.635px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+.journey_blocks {
+  display: flex;
+  gap: 16px;
+}
+
+.journey_blocks_block,
+.journey_blocks_block_second {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.journey_blocks_block h3,
+.journey_blocks_block_second h3 {
+  color: var(--Warm-Taupe, #847577);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.journey_blocks_block h3 p,
+.journey_blocks_block_second h3 p {
+  color: var(--Warm-Taupe, #847577);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.journey_blocks_block p,
+.journey_blocks_block_second p {
+  color: var(--Dark-Taupe, #454346);
+  text-align: justify;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+.journey_blocks_block_info .btn_white {
+  margin-bottom: 50px;
+  display: block;
+  max-width: fit-content;
+  margin-left: auto;
+}
+
+.journey_blocks .journey_blocks_block .journey_blocks_block_img {
+  position: relative;
+  top: -400px;
+  transition: all 1s;
+}
+
+.journey_blocks.show .journey_blocks_block .journey_blocks_block_img {
+  top: 0;
+  transition: all 1s;
+}
+
+.journey_blocks .journey_blocks_block_second {
+  position: relative;
+  top: 400px;
+  transition: all 1s;
+}
+
+.journey_blocks.show .journey_blocks_block_second {
+  top: 0px;
+  transition: all 1s;
+}
+
+.journey_blocks_block_info ul {
+  color: var(--Dark-Taupe, #454346);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  list-style-type: disc;
+  padding-left: 25px;
+}
+
+.rating {
+  padding: 215px 0 70px;
+}
+
+.rating h3{
+  color: var(--Warm-Taupe, #847577);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+}
+
+.rating_blocks {
+  padding: 80px 0 70px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+}
+
+.rating_blocks_block a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.rating_blocks_block {
+  max-width: 100%;
+  border: 1px solid var(--Ocean-Blue, #b7d6d9);
+  background: var(--Pure-White, #fff);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  max-height: 260px;
+}
+
+.rating_blocks_block a {
+  max-width: 100%;
+  padding: 44px 24px 0;
+  width: 100%;
+}
+
+.rating_blocks_block a h3 {
+  color: var(--Warm-Taupe, #847577);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 192% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+
+h3 {
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.reviews {
+  padding: 80px 0 140px;
+  background: rgba(183, 214, 217, 0.30);
+}
+
+.location {
+  padding: 100px 0;
+}
+
+.location h3 {
+  color: var(--Warm-Taupe, #847577);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-bottom: 100px;
+}
+
+.location_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location_info_adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location_info_adress img {
+  width: 100%;
+  max-width: 235px;
+  margin-bottom: 46px;
+}
+
+.location_info_adress p {
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  max-width: 420px;
+  margin-bottom: 20px;
+}
+
+.location_info_adress ul {
+  color: var(--Dark-Taupe, #454346);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  margin-bottom: 46px;
+  list-style-type: disc;
+}
+
+.booking_description {
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  margin-bottom: 20px;
+}
+
+.booking_benef_logo_blocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.booking_benef_logo_blocks_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.booking_benef_logo_block {
+  width: 100%;
+  max-width: 380px;
+  height: 100%;
+  max-height: 150px;
+  border: 1px solid var(--Ocean-Blue, #B7D6D9);
+  background: var(--Pure-White, #FFF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+}
+
 @media (max-width: 768px) {
+    .booking_benef_logo_blocks_items {
+      flex-direction: column;
+    }
+    .location_info {
+      flex-direction: column-reverse;
+      grid-gap: 40px;
+    }
+    .reviews {
+      padding: 25px 0 30px;
+      background: rgba(183, 214, 217, 0.30);
+    }
+    h3 {
+      font-size: 18px !important;
+      padding-bottom: 0 !important;
+    }
+
+    .rating_blocks {
+      flex-direction: column;
+      padding: 0 20px;
+      gap: 16px;
+    }
+
+    .rating h3{
+      font-size: 18.5px;
+    }
+
+    .journey_blocks_block_info {
+      padding: 0 15px;
+    }
+
+    .journey_blocks_block_info h3 {
+      color: var(--Warm-Taupe, #847577);
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px; /* 200% */
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+
+    .journey_blocks_block_info p {
+      color: var(--Dark-Taupe, #454346);
+      text-align: justify;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 171.429% */
+    }
+
+    .journey_blocks .journey_blocks_block .journey_blocks_block_img,
+    .journey_blocks .journey_blocks_block_second {
+      position: static;
+      top: 0;
+      transition: none;
+    }
+
+    .journey_blocks.show .journey_blocks_block .journey_blocks_block_img,
+    .journey_blocks.show .journey_blocks_block_second {
+      top: 0;
+      transition: none;
+    }
+
+    .journey_info h2 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .journey_blocks_block_second {
+      display: none;
+    }
+
+    .journey_info span {
+      color: var(--Warm-Taupe, #847577);
+      text-align: center;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: "DM Sans";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px; /* 155.556% */
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
     .experience_blocks_block_info {
       padding: 0 15px;
     }

@@ -1,0 +1,107 @@
+.reviews_slider {
+    margin-top: 40px;
+}
+
+.review_item {
+    padding: 0px;
+    transition: transform .3s ease;
+}
+
+
+.reviews h3{
+  color: var(--Dark-Taupe, #454346);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-bottom: 70px;
+}
+
+.review_item a {
+  display: block;
+  max-width: fit-content;
+  color: var(--Main-bulma, #000);
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-left: auto;
+}
+
+.review_item img {
+  max-width: 430px;
+  height: 400px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.review_item h4 {
+  color: var(--Dark-Taupe, #454346);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 200% */
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review_item p {
+  overflow: hidden;
+  color: var(--Dark-Taupe, #454346);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  margin-bottom: 40px;
+}
+
+.slick-center .review_item {
+    transform: scale(1.1);
+}
+
+.reviews_container {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.slick-slide {
+    margin: 0 24px;
+    max-width: 430px;
+}
+
+@media (max-width: 768px) {
+    .slick-slide {
+        margin: 0 16px;
+    }
+
+    .review_item img {
+        margin-bottom: 10px;
+    }
+
+    .review_item h4 {
+      margin-bottom: 24px;
+    }
+
+    .review_item p {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+}

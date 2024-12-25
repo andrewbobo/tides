@@ -78,7 +78,7 @@ header {
   z-index: 9999;
   top: 20px;
   position: absolute;
-  right: 24px;
+  right: 0;
 }
 
 .burger-menu div {
@@ -99,6 +99,48 @@ header {
 .burger-menu.open .bar3 {
     transform: rotate(-45deg) translate(10px, -10px);
 }
+
+.header-gallery {
+    padding: 20px;
+    background-color: #fff;
+    color: var(--Dark-Taupe, #454346);
+    position: relative;
+    z-index: 999;
+    width: 100%;
+}
+
+.header-gallery .header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-gallery #primary-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+}
+
+.header-gallery #primary-menu a {
+    color: var(--Dark-Taupe, #454346);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.header-gallery .burger-menu div {
+    background-color: var(--Dark-Taupe, #454346);
+}
+
+
 
 @media (max-width: 768px) {
     header {
